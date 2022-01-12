@@ -42,18 +42,18 @@ async function showImages(pageNo){
     res = await requestImages();
     toggleAnim();
     //console.log(res);
-        let data = res.data;
-        console.log(data);
-        for(let obj of data){
-            console.log(obj.urls.regular);
-            let url = obj.urls.regular;
-            let newDiv = document.createElement('div');
-            newDiv.classList.add('newDiv');
-            let newImg = document.createElement('img');
-            newImg.setAttribute('src',url);
-            newDiv.appendChild(newImg);
-            imgContainerDiv.appendChild(newDiv);
-        }
+    let data = res.data;
+    console.log(data);
+    for(let obj of data){
+        console.log(obj.urls.regular);
+        let url = obj.urls.regular;
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('newDiv');
+        let newImg = document.createElement('img');
+        newImg.setAttribute('src',url);
+        newDiv.appendChild(newImg);
+        imgContainerDiv.appendChild(newDiv);
+    }
 }
 
 /***toggle animation */
