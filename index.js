@@ -8,7 +8,7 @@ const btnLast = document.getElementById('last');
 let pageNo = 0;
 let res=null;
 
-//****Toggling enable and disable buttons */ button
+//****Toggling enable and disable buttons */
 function checkPrevBtn(){
     if(pageNo>1){
         btnPrev.disabled = false;
